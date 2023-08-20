@@ -1,3 +1,6 @@
+-- Script: full_creation.sql
+-- Description: Creates the table second_table if it doesn't already exist and inserts rows into it
+
 CREATE TABLE IF NOT EXISTS hbtn_0c_0.second_table (
   id INT,
   name VARCHAR(256),
@@ -9,4 +12,3 @@ VALUES (1, 'John', 10),
        (2, 'Alex', 3),
        (3, 'Bob', 14),
        (4, 'George', 8);
-       cat full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
